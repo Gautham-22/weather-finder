@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/background.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Palatino Linotype","Book Antiqua",Palatino,serif;
+    text-shadow: 2px 2px 1px black;
+}
+
+.search-container {
+    width: min(70%,350px);
+    position: absolute;
+    top: 5%;
+    right: 50%;
+    transform: translate(50%,-5%);
+    background-color: #272c33;
+    border-radius: 40px;
+    padding: 0.8em;
+}
+
+.search-text {
+    width: 75%;
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    float: left;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    padding: 0 0.5em;
+}
+
+.search-btn {
+    width: min(20%,40px);
+    height: 40px;
+    color: rgb(56, 56, 228);
+    background-color: white;
+    float: right;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    width: min(80%,430px);
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+    visibility: hidden;
+}
+
+.weather-description {
+    padding: 50px;
+    text-align: center;
+}
+
+.weather-description .city-header {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: "Lucida Snas Unicode","Lucida Granade",sans-serif;
+    margin-bottom: 0.6em;
+}
+
+.weather-main{
+    display: block;
+    margin-bottom: 2em;
+}
+
+.weather-main div {
+    display: inline-block;
+}
+
+.weather-main .description-header {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 2rem;
+    vertical-align: 75%;
+    margin-left: 3px;
+}
+
+.weather-main .temperature {
+    font-size: 2.7rem;
+    vertical-align: 32%;
+}
+
+hr {
+    margin-bottom: 2.3em;
+}
+
+.bottom-details {
+    text-align: right;
+    font-size: 1.1rem;
+    text-shadow: 1.5px 1.5px 1px black;
+}
+
+@media screen and (max-width: 640px){
+    :root {
+        font-size: 14px;
+    }
+    .weather-main .description-header {
+        vertical-align: 50%;
+    }
+    .weather-main .temperature {
+        vertical-align: 25%;
+    }
+}

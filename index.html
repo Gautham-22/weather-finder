@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <title>Weather App</title>
+    </head>
+    <body>
+        <div class="search-container">
+            <input type="text" placeholder="City name" class="search-text" spellcheck="false">
+            <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        <div class="weather-container">
+            <div class="weather-description">
+                <h1 class="city-header">London</h1>
+                <div class="weather-main">
+                    <div class="temperature"></div>
+                    <div class="description-header">Rainy</div>
+                    <div><img src="" alt="" class="weather-icon" height="100px" width="100px"></div>
+                    <hr>
+                </div>
+                <div class="bottom-details" id="wind-speed">Winds at in 5 m/s</div>
+                <div class="bottom-details" id="humidity">Humidity levels at 57%</div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
